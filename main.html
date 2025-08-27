@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Deliera — Logo Concepts</title>
+<style>
+  :root{
+    --rose:#C98A95;        /* Dusty Rose (Primary) */
+    --rose-deep:#A4626F;   /* Deep Rose (Accent) */
+    --cream:#FFF7F1;       /* Cream */
+    --beige:#EADBD3;       /* Soft Beige */
+    --taupe:#A68A7B;       /* Warm Taupe */
+    --charcoal:#3C3A3A;    /* Neutral Text */
+    --white:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:ui-serif, "Times New Roman", Georgia, serif;color:var(--charcoal);background:var(--cream);} 
+  .wrap{max-width:1200px;margin:0 auto;padding:32px}
+  h1{font-size:40px;margin:0 0 8px 0;letter-spacing:.5px}
+  h2{font-size:24px;margin:28px 0 12px 0}
+  h3{font-size:18px;margin:24px 0 8px 0;opacity:.9}
+  p{line-height:1.6}
+  .grid{display:grid;gap:16px}
+  .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+  .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+  .card{background:var(--white);border-radius:18px;padding:20px;border:1px solid #eee;box-shadow:0 4px 24px rgba(0,0,0,.04)}
+  .swatch{display:flex;align-items:center;gap:12px;padding:10px;border-radius:12px;border:1px solid #eee}
+  .dot{width:28px;height:28px;border-radius:50%}
+  code{background:#f7f4f2;padding:2px 6px;border-radius:6px}
+  .row{display:flex;gap:16px;flex-wrap:wrap}
+  .tag{font-size:12px;border:1px solid #ddd;padding:4px 8px;border-radius:999px;background:#faf8f7}
+  .divider{height:1px;background:#eee;margin:24px 0}
+  .badge{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border:1px dashed var(--beige);border-radius:999px;background:var(--cream)}
+
+  /* Wordmark samples */
+  .wordmark{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;padding:22px;border-radius:16px;border:1px solid #eee}
+  .wordmark.serif{font-family:"Playfair Display", ui-serif, Georgia, serif;letter-spacing:.5px}
+  .wordmark.script{font-family:"Great Vibes", "Brush Script MT", cursive;font-size:46px}
+  .wordmark .subtitle{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;margin:2px 0 0 0;opacity:.7;text-align:center}
+
+  /* Icon canvas */
+  .icon{display:grid;place-items:center;border-radius:16px;border:1px solid #eee;background:var(--white);padding:18px}
+  .on-rose{background:var(--rose);}
+  .on-beige{background:var(--beige);}
+  .on-cream{background:var(--cream);}
+
+  .smallnote{font-size:12px;opacity:.8}
+
+  /* Sticker mock */
+  .sticker{background:rgba(255,255,255,.8);backdrop-filter:saturate(120%) blur(2px);border-radius:14px;padding:14px;border:1px solid #e9e2df;display:flex;align-items:center;gap:12px}
+  .zipper{height:54px;width:92px;border-radius:10px;border:2px dashed #d9cfc9;background:linear-gradient(180deg,rgba(233,225,220,.6),rgba(255,255,255,.6));display:flex;align-items:center;justify-content:center}
+
+  /* Utility */
+  .muted{opacity:.7}
+  /* D + eliera combo lockup */
+  .combo{display:flex;align-items:flex-end;gap:10px}
+  .combo .rest{font-family:"Playfair Display", ui-serif, Georgia, serif;font-size:42px;line-height:1;color:var(--charcoal)}
+  .combo .stack{display:flex;flex-direction:column;align-items:flex-start}
+  .combo .subtitle{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-top:4px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Deliera — Logo Concepts</h1>
+    <p class="muted">Style: minimalist · feminine · cozy · elegant. Palette: Dusty Rose · Cream · Soft Beige. These are <em>drafts</em> to explore directions across wordmark, monogram, and emblem/icon for social and packaging.</p>
+
+    <div class="card">
+      <h2>Color Palette</h2>
+      <div class="grid cols-3">
+        <div class="swatch"><div class="dot" style="background:var(--rose)"></div><div><strong>Dusty Rose</strong><br><code>#C98A95</code></div></div>
+        <div class="swatch"><div class="dot" style="background:var(--cream);border:1px solid #eee"></div><div><strong>Cream</strong><br><code>#FFF7F1</code></div></div>
+        <div class="swatch"><div class="dot" style="background:var(--beige)"></div><div><strong>Soft Beige</strong><br><code>#EADBD3</code></div></div>
+        <div class="swatch"><div class="dot" style="background:var(--rose-deep)"></div><div><strong>Deep Rose</strong><br><code>#A4626F</code></div></div>
+        <div class="swatch"><div class="dot" style="background:var(--taupe)"></div><div><strong>Warm Taupe</strong><br><code>#A68A7B</code></div></div>
+        <div class="swatch"><div class="dot" style="background:var(--charcoal)"></div><div><strong>Charcoal</strong><br><code>#3C3A3A</code></div></div>
+      </div>
+      <p class="smallnote">Suggested usage: Primary <strong>Dusty Rose</strong> 60%, Neutrals (Cream/Beige) 30%, Accents (Deep Rose/Taupe/Charcoal) 10%.</p>
+    </div>
+
+    <div class="card">
+      <h2>Wordmark Directions</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>Option W1 · Elegant Serif</h3>
+          <div class="wordmark serif" style="font-size:48px;color:var(--charcoal)">
+            <span style="font-variant:small-caps;letter-spacing:.06em">Deliera</span>
+            <span class="subtitle">Homewear</span>
+          </div>
+          <p class="smallnote">Classic serif with tight tracking and soft curves. Works well for premium-yet-approachable tone.</p>
+        </div>
+        <div>
+          <h3>Option W2 · Smooth Script</h3>
+          <div class="wordmark script" style="color:var(--rose-deep)">Deliera</div>
+          <p class="smallnote">Flowing script for femininity and coziness. Use sparingly in headers; pair with a clean sans/serif for readability.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Monogram (D) — Fabric Flow</h2>
+      <div class="grid cols-3">
+        <!-- Monogram 1: Ribbon D outline -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Monogram D ribbon">
+            <defs>
+              <linearGradient id="gRose" x1="0" x2="1"><stop offset="0" stop-color="var(--rose)"/><stop offset="1" stop-color="var(--rose-deep)"/></linearGradient>
+            </defs>
+            <!-- Outer D -->
+            <path d="M42,25 L42,135 C42,135 130,135 130,80 C130,25 42,25 42,25" fill="none" stroke="url(#gRose)" stroke-width="10" stroke-linecap="round"/>
+            <!-- Inner fold -->
+            <path d="M58,45 C110,45 110,115 58,115" fill="none" stroke="var(--taupe)" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+          </svg>
+          <div class="smallnote">M1 · Ribbon-like D with inner fabric fold.</div>
+        </div>
+        <!-- Monogram 2: Dress silhouette D -->
+        <div class="icon on-beige">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Monogram D dress">
+            <!-- Stylized dress sweeping into a D bowl -->
+            <path d="M50,30 L50,130" stroke="var(--rose-deep)" stroke-width="10" stroke-linecap="round"/>
+            <path d="M50,30 C120,30 120,130 50,130" fill="none" stroke="var(--rose)" stroke-width="10" stroke-linecap="round"/>
+            <path d="M50,70 C90,60 110,80 120,100" fill="none" stroke="var(--taupe)" stroke-width="6" stroke-linecap="round" opacity=".7"/>
+          </svg>
+          <div class="smallnote">M2 · Vertical stem + skirt sweep suggesting a dress.</div>
+        </div>
+        <!-- Monogram 3: Encircled D for favicon -->
+        <div class="icon on-rose">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Monogram D in circle">
+            <circle cx="80" cy="80" r="70" fill="none" stroke="var(--cream)" stroke-width="6"/>
+            <path d="M54,35 L54,125 C54,125 120,125 120,80 C120,35 54,35 54,35" fill="none" stroke="var(--cream)" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+          <div class="smallnote" style="color:var(--cream)">M3 · Encircled for app icon / avatar.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Emblem / Icon — Floral & Fabric Motifs</h2>
+      <div class="grid cols-3">
+        <!-- Emblem 1: Leaf sprig -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Leaf sprig">
+            <path d="M30,120 C70,80 90,50 130,40" fill="none" stroke="var(--taupe)" stroke-width="6" stroke-linecap="round"/>
+            <path d="M70,90 C85,80 95,70 100,55 C85,60 80,70 70,90 Z" fill="var(--rose)" opacity=".9"/>
+            <path d="M95,65 C110,55 120,50 125,45 C115,47 108,52 95,65 Z" fill="var(--rose-deep)"/>
+          </svg>
+          <div class="smallnote">E1 · Minimal leaf/floral accent.</div>
+        </div>
+        <!-- Emblem 2: Fabric folds -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Fabric folds">
+            <path d="M25,60 C55,30 105,30 135,60" fill="none" stroke="var(--rose)" stroke-width="8" stroke-linecap="round"/>
+            <path d="M25,90 C55,60 105,60 135,90" fill="none" stroke="var(--taupe)" stroke-width="8" stroke-linecap="round" opacity=".7"/>
+            <path d="M25,120 C55,90 105,90 135,120" fill="none" stroke="var(--rose-deep)" stroke-width="8" stroke-linecap="round" opacity=".6"/>
+          </svg>
+          <div class="smallnote">E2 · Three soft curves to suggest draped fabric.</div>
+        </div>
+        <!-- Emblem 3: Petal seal -->
+        <div class="icon on-cream">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Petal seal">
+            <circle cx="80" cy="80" r="62" fill="none" stroke="var(--rose)" stroke-width="6"/>
+            <path d="M80,40 C100,60 100,100 80,120 C60,100 60,60 80,40 Z" fill="var(--rose)" opacity=".85"/>
+            <path d="M80,55 C88,65 88,95 80,105 C72,95 72,65 80,55 Z" fill="var(--rose-deep)" opacity=".8"/>
+          </svg>
+          <div class="smallnote">E3 · Petal/tear-drop mark inside a seal.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Lockups & Use Cases</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>L1 · Monogram + Wordmark (Horizontal)</h3>
+          <div class="row" style="align-items:center">
+            <svg viewBox="0 0 160 160" width="64" height="64" aria-label="Monogram small">
+              <path d="M24,18 L24,140 C24,140 140,140 140,80 C140,20 24,18 24,18" fill="none" stroke="var(--rose)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="wordmark serif" style="font-size:40px;color:var(--charcoal)">Deliera</div>
+      <div>
+        <h3>L3 · Monogram-as-“D” + <em>eliera</em> (Drop-cap Lockup)</h3>
+        <div class="combo">
+          <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Monogram D">
+            <path d="M42,25 L42,135 C42,135 130,135 130,80 C130,25 42,25 42,25" fill="none" stroke="var(--rose-deep)" stroke-width="10" stroke-linecap="round"/>
+          </svg>
+          <div class="stack">
+            <div class="rest">eliera</div>
+            <div class="subtitle">Homewear</div>
+          </div>
+        </div>
+        <p class="smallnote">Integrated lockup where the monogram forms the initial letter. Ideal for tight headers, avatars, and small labels.</p>
+      </div>
+          </div>
+          <p class="smallnote">Primary lockup for website header and packaging front.</p>
+        </div>
+        <div>
+          <h3>L2 · Badge for Stickers / Avatars</h3>
+          <div class="row">
+            <div class="icon on-rose" style="width:120px;height:120px;border-radius:50%">
+              <svg viewBox="0 0 160 160" width="100" height="100" aria-label="Badge D">
+                <path d="M42,25 L42,135 C42,135 130,135 130,80 C130,25 42,25 42,25" fill="none" stroke="var(--cream)" stroke-width="12" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="icon on-beige" style="width:120px;height:120px;border-radius:50%">
+              <span style="font-family: 'Great Vibes', cursive; font-size:34px; color:var(--rose-deep)">Deliera</span>
+            </div>
+          </div>
+          <p class="smallnote">Round avatars for Shopee/TikTok and sticker seals (transparent background available).</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Packaging Sticker Mock (Transparent Zipper Plastic)</h2>
+      <div class="sticker">
+        <div class="zipper">ZIPPER<br/><span class="smallnote">bag</span></div>
+        <div>
+          <div class="badge">
+            <svg viewBox="0 0 160 160" width="36" height="36" aria-label="Mini D">
+              <path d="M42,25 L42,135 C42,135 130,135 130,80 C130,25 42,25 42,25" fill="none" stroke="var(--rose-deep)" stroke-width="10" stroke-linecap="round"/>
+            </svg>
+            <strong style="font-family: ui-serif, Georgia, serif;">Deliera</strong>
+          </div>
+          <div class="smallnote" style="margin-top:6px">Recommended sizes: 50×30mm (small), 80×40mm (medium), 100×50mm (large). Print in Deep Rose on clear vinyl.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Typography Pairings</h2>
+      <p><strong>Primary Serif</strong>: Playfair Display / Cormorant Garamond / Libre Baskerville. <br/>
+      <strong>Optional Script Accent</strong>: Great Vibes / Parisienne / Allura (for headers only). <br/>
+      <strong>Supporting Sans</strong>: Inter / Lato / Manrope for UI and captions.</p>
+      <div class="divider"></div>
+      <p class="smallnote">Rules: keep body copy in sans/serif for clarity; reserve script for one or two words (e.g., the brand name) to maintain a premium, uncluttered feel.</p>
+    </div>
+
+    <div class="card">
+      <h2>Usage Notes</h2>
+      <ul>
+        <li>Minimum logo height for clarity on mobile: 24px (monogram), 32px (wordmark).</li>
+        <li>Clear space: at least the height of the letter <em>D</em> around the logo.</li>
+        <li>On busy photos, place the encircled monogram (M3) or use a cream badge.</li>
+        <li>For TikTok/Shopee avatars, use the round badge (Deep Rose background, cream mark).</li>
+        <li>Never outline the script wordmark; avoid drop shadows and heavy gradients.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Export Checklist</h2>
+      <div class="row">
+        <span class="tag">SVG (mono + full color)</span>
+        <span class="tag">PNG 1024, 512, 256</span>
+        <span class="tag">PDF for print</span>
+        <span class="tag">Icon 512×512</span>
+        <span class="tag">Favicon 32×32</span>
+      </div>
+    </div>
+
+    <p class="smallnote">These are draft visuals. We can refine stroke weights, curves, and spacing after you pick 1 Wordmark (W1/W2), 1 Monogram (M1–M3), and 1 Emblem (E1–E3).</p>
+  </div>
+</body>
+</html>
