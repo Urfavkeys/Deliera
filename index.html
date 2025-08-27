@@ -58,6 +58,24 @@
   .combo .rest{font-family:"Playfair Display", ui-serif, Georgia, serif;font-size:42px;line-height:1;color:var(--charcoal)}
   .combo .stack{display:flex;flex-direction:column;align-items:flex-start}
   .combo .subtitle{font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.7;margin-top:4px}
+  .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+  .tinyrow{display:flex;gap:12px;align-items:center}
+  .tinyicon{width:32px;height:32px}
+  .tinyicon.s{width:24px;height:24px}
+  .grid.cols-4{grid-template-columns:repeat(4,1fr)}
+  .grid.cols-5{grid-template-columns:repeat(5,1fr)}
+  .mixmark{display:flex;flex-direction:column;align-items:center;gap:6px;padding:18px;border:1px solid #eee;border-radius:16px;background:var(--white)}
+  .mixline{display:flex;gap:6px;align-items:baseline}
+  .mix-serif{font-family:"Playfair Display", ui-serif, Georgia, serif;font-size:40px;line-height:1;color:var(--charcoal)}
+  .mix-sans{font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;font-size:14px;letter-spacing:.18em;text-transform:uppercase;opacity:.8}
+  .mix-script{font-family:"Great Vibes", "Brush Script MT", cursive;font-size:44px;line-height:1;color:var(--rose-deep)}
+  .swatch-row{display:flex;gap:10px;flex-wrap:wrap}
+  .chip{display:flex;align-items:center;gap:8px;border:1px solid #eee;border-radius:999px;padding:6px 10px;background:#fff}
+  .chip .dot{width:14px;height:14px;border-radius:50%;border:1px solid #ddd}
+  .badge-solid{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;background:var(--rose);color:var(--cream);font-weight:600}
+  .badge-outline{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border-radius:999px;border:1.5px solid var(--rose);color:var(--rose);font-weight:600;background:transparent}
+  .row-center{display:flex;gap:14px;align-items:center}
+  .pill{border-radius:999px;padding:8px 14px;border:1px solid #eee;background:#fff}
 </style>
 </head>
 <body>
@@ -133,6 +151,276 @@
         </div>
       </div>
     </div>
+    <div class="card">
+      <h2>Monogram (D) — Fabric Texture Variant</h2>
+      <div class="grid cols-3">
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Fabric-textured D">
+            <defs>
+              <linearGradient id="gCloth" x1="0" x2="1">
+                <stop offset="0" stop-color="var(--rose-deep)"/>
+                <stop offset="1" stop-color="var(--rose)"/>
+              </linearGradient>
+            </defs>
+            <!-- Thick ribbon stroke to feel like cloth -->
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="url(#gCloth)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Subtle 'stitch' along the inner edge -->
+            <path d="M52,35 L52,125 C52,125 118,125 118,80 C118,35 52,35 52,35" fill="none" stroke="var(--cream)" stroke-width="2" stroke-dasharray="2 4" opacity=".9"/>
+            <!-- Inner fold hint for depth -->
+            <path d="M60,45 C110,45 110,115 60,115" fill="none" stroke="var(--taupe)" stroke-width="6" stroke-linecap="round" opacity=".5"/>
+          </svg>
+          <div class="smallnote">M4 · “Cloth” D — thicker ribbon stroke with subtle stitches and inner fold.</div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Fabric Monogram — Expanded Variants (M5–M12)</h2>
+      <div class="grid cols-4">
+        <!-- M5: Pleated folds -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Pleated D">
+            <defs>
+              <linearGradient id="gPleat" x1="0" x2="1"><stop offset="0" stop-color="var(--rose)"/><stop offset="1" stop-color="var(--rose-deep)"/></linearGradient>
+            </defs>
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="url(#gPleat)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M56,45 C108,45 108,115 56,115" fill="none" stroke="var(--taupe)" stroke-width="5" opacity=".55"/>
+            <path d="M60,60 C108,60 108,100 60,100" fill="none" stroke="var(--taupe)" stroke-width="4" opacity=".45"/>
+            <path d="M64,75 C104,75 104,90 64,90" fill="none" stroke="var(--taupe)" stroke-width="3" opacity=".4"/>
+          </svg>
+          <div class="smallnote">M5 · Pleated folds (three inner pleats).</div>
+        </div>
+        <!-- M6: Double stitch -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Double stitch D">
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="16" stroke-linecap="round"/>
+            <path d="M50,33 L50,127 C50,127 120,127 120,80 C120,33 50,33 50,33" fill="none" stroke="var(--cream)" stroke-width="2" stroke-dasharray="3 4"/>
+            <path d="M46,29 L46,131 C46,131 124,131 124,80 C124,29 46,29 46,29" fill="none" stroke="var(--cream)" stroke-width="2" stroke-dasharray="3 4" opacity=".8"/>
+          </svg>
+          <div class="smallnote">M6 · Twin stitch lines (selvedge look).</div>
+        </div>
+        <!-- M7: Satin highlight -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Satin highlight D">
+            <defs>
+              <linearGradient id="gSatin" x1="0" x2="1"><stop offset="0" stop-color="var(--rose-deep)"/><stop offset="1" stop-color="var(--rose)"/></linearGradient>
+            </defs>
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="url(#gSatin)" stroke-width="18" stroke-linecap="round"/>
+            <path d="M54,40 C112,44 112,116 58,120" fill="none" stroke="#FFFFFF" stroke-opacity=".55" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+          <div class="smallnote">M7 · Satin ribbon sheen (subtle highlight).</div>
+        </div>
+        <!-- M8: Lace inner beads -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Lace D">
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M52,35 L52,125 C52,125 118,125 118,80 C118,35 52,35 52,35" fill="none" stroke="var(--cream)" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 8"/>
+          </svg>
+          <div class="smallnote">M8 · Lace dots along inner edge.</div>
+        </div>
+        <!-- M9: Fringe tail -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Fringe D">
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose-deep)" stroke-width="16" stroke-linecap="round"/>
+            <path d="M42,135 l0,10" stroke="var(--taupe)" stroke-width="4" stroke-linecap="round"/>
+            <path d="M36,133 l0,10" stroke="var(--taupe)" stroke-width="3" stroke-linecap="round"/>
+            <path d="M48,133 l0,10" stroke="var(--taupe)" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <div class="smallnote">M9 · Short fringe at the hem.</div>
+        </div>
+        <!-- M10: Selvedge edge -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Selvedge D">
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M44,27 L44,133 C44,133 126,133 126,80 C126,27 44,27 44,27" fill="none" stroke="var(--taupe)" stroke-width="2" opacity=".7"/>
+          </svg>
+          <div class="smallnote">M10 · Subtle selvedge line.</div>
+        </div>
+        <!-- M11: Twisted sash -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Twisted sash D">
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="14" stroke-linecap="round"/>
+            <path d="M60,50 C95,55 110,75 116,96" fill="none" stroke="var(--taupe)" stroke-width="6" stroke-linecap="round" opacity=".55"/>
+            <path d="M56,90 C88,85 108,70 120,60" fill="none" stroke="var(--rose-deep)" stroke-width="5" stroke-linecap="round" opacity=".5"/>
+          </svg>
+          <div class="smallnote">M11 · Crossing bands suggest a twist.</div>
+        </div>
+        <!-- M12: Knit dotted overlay -->
+        <div class="icon">
+          <svg viewBox="0 0 160 160" width="140" height="140" aria-label="Knit D">
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="16" stroke-linecap="round"/>
+            <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--cream)" stroke-width="2.5" stroke-dasharray="2 6" stroke-linecap="round" opacity=".95"/>
+          </svg>
+          <div class="smallnote">M12 · Knit-style dotted top stitch.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Lockups — Fabric D Variants</h2>
+      <div class="grid cols-2">
+        <div>
+          <h3>L4 · M5 Pleated + eliera</h3>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Pleated D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="12" stroke-linecap="round"/>
+              <path d="M56,45 C108,45 108,115 56,115" fill="none" stroke="var(--taupe)" stroke-width="4" opacity=".6"/>
+            </svg>
+            <div class="stack"><div class="rest">eliera</div><div class="subtitle">Homewear</div></div>
+          </div>
+        </div>
+        <div>
+          <h3>L5 · M8 Lace + eliera</h3>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Lace D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="12" stroke-linecap="round"/>
+              <path d="M52,35 L52,125 C52,125 118,125 118,80 C118,35 52,35 52,35" fill="none" stroke="var(--cream)" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 7"/>
+            </svg>
+            <div class="stack"><div class="rest">eliera</div><div class="subtitle">Homewear</div></div>
+          </div>
+        </div>
+        <div>
+          <h3>L6 · M10 Selvedge + eliera</h3>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Selvedge D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose-deep)" stroke-width="12" stroke-linecap="round"/>
+              <path d="M44,27 L44,133 C44,133 126,133 126,80 C126,27 44,27 44,27" fill="none" stroke="var(--taupe)" stroke-width="2" opacity=".7"/>
+            </svg>
+            <div class="stack"><div class="rest">eliera</div><div class="subtitle">Homewear</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Font Mix Sets (F1–F8)</h2>
+      <div class="grid cols-4">
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-serif">Del</span><span class="mix-script">iera</span></div>
+          <div class="mix-sans">Homewear</div>
+          <div class="smallnote">F1 · Serif + Script tail for warmth.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-script" style="font-size:46px">D</span><span class="mix-serif">eliera</span></div>
+          <div class="mix-sans">Homewear</div>
+          <div class="smallnote">F2 · Script drop-cap D + serif rest.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-serif" style="letter-spacing:.04em">Deliera</span></div>
+          <div class="mix-sans" style="letter-spacing:.24em">Homewear</div>
+          <div class="smallnote">F3 · Elegant serif + spaced sans subtitle.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-serif" style="font-variant:small-caps;letter-spacing:.06em">Deliera</span></div>
+          <div class="mix-sans" style="opacity:.6">Homewear</div>
+          <div class="smallnote">F4 · Small-caps vibe, minimal.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-serif" style="font-weight:700">Del</span><span class="mix-serif" style="font-weight:400">iera</span></div>
+          <div class="mix-sans">Homewear</div>
+          <div class="smallnote">F5 · Weight-contrast inside word.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-serif">Deli</span><span class="mix-script">era</span></div>
+          <div class="mix-sans">Homewear</div>
+          <div class="smallnote">F6 · Script only on ending syllable.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-script">Deliera</span></div>
+          <div class="mix-serif" style="font-size:18px;opacity:.8">HOMEWEAR</div>
+          <div class="smallnote">F7 · Script wordmark + serif uppercase tagline.</div>
+        </div>
+        <div class="mixmark">
+          <div class="mixline"><span class="mix-serif">D</span><span class="mix-script">eliera</span></div>
+          <div class="mix-serif" style="font-size:16px;letter-spacing:.22em;opacity:.75">Homewear</div>
+          <div class="smallnote">F8 · Serif D + script body; serif tagline.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Color Mix Systems (C1–C8)</h2>
+      <div class="grid cols-4">
+        <div class="icon on-cream"><div class="wordmark serif" style="font-size:34px;color:var(--charcoal)">Deliera</div><div class="mix-sans">Rose accent</div><div class="swatch-row"><span class="chip"><span class="dot" style="background:var(--charcoal)"></span>Text</span><span class="chip"><span class="dot" style="background:var(--rose)"></span>Accent</span></div><div class="smallnote">C1 · Neutral text + rose accents.</div></div>
+        <div class="icon on-cream"><div class="wordmark serif" style="font-size:34px;color:var(--rose-deep)">Deliera</div><div class="mix-sans">Cream subtitle</div><div class="swatch-row"><span class="chip"><span class="dot" style="background:var(--rose-deep)"></span>Word</span><span class="chip"><span class="dot" style="background:var(--cream)"></span>Sub</span></div><div class="smallnote">C2 · Deep rose type on cream.</div></div>
+        <div class="icon on-beige"><div class="wordmark serif" style="font-size:34px;color:var(--charcoal)">Deliera</div><div class="mix-sans" style="color:var(--charcoal)">Homewear</div><div class="swatch-row"><span class="chip"><span class="dot" style="background:var(--beige)"></span>BG</span><span class="chip"><span class="dot" style="background:var(--charcoal)"></span>Text</span></div><div class="smallnote">C3 · Beige ground, charcoal text.</div></div>
+        <div class="icon on-rose"><div class="wordmark serif" style="font-size:34px;color:var(--cream)">Deliera</div><div class="mix-sans" style="color:var(--cream)">Homewear</div><div class="swatch-row"><span class="chip"><span class="dot" style="background:var(--rose)"></span>BG</span><span class="chip"><span class="dot" style="background:var(--cream)"></span>Text</span></div><div class="smallnote" style="color:var(--cream)">C4 · Reverse mark for avatars.</div></div>
+        <div class="icon"><div class="wordmark serif" style="font-size:34px;background:linear-gradient(90deg,var(--rose),var(--rose-deep));-webkit-background-clip:text;color:transparent">Deliera</div><div class="mix-sans">Gradient word</div><div class="smallnote">C5 · Subtle rose→deep rose gradient.</div></div>
+        <div class="icon"><div class="wordmark serif" style="font-size:34px;color:var(--taupe);text-shadow:0 1px 0 rgba(255,255,255,.6)">Deliera</div><div class="mix-sans">Taupe variant</div><div class="smallnote">C6 · Warm taupe for earthy capsules.</div></div>
+        <div class="icon"><div class="wordmark serif" style="font-size:34px;color:var(--charcoal);border-bottom:2px solid var(--rose);display:inline-block">Deliera</div><div class="mix-sans">Underline accent</div><div class="smallnote">C7 · Minimal rose underline.</div></div>
+        <div class="icon"><div class="wordmark serif" style="font-size:34px;color:transparent;-webkit-text-stroke:1.2px var(--rose)">Deliera</div><div class="mix-sans">Outline</div><div class="smallnote">C8 · 1-color outline for clear vinyl.</div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Mixed Font + Color Lockups (LC1–LC6)</h2>
+      <div class="grid cols-3">
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="stack"><div class="rest" style="color:var(--charcoal)">eliera</div><div class="subtitle" style="color:var(--taupe)">Homewear</div></div>
+          </div>
+          <p class="smallnote">LC1 · Monogram in rose, word in charcoal, taupe subtitle.</p>
+        </div>
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--cream)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="stack"><div class="rest" style="color:var(--cream)">eliera</div><div class="subtitle" style="color:var(--cream)">Homewear</div></div>
+          </div>
+          <div class="pill on-rose" style="margin-top:8px">Reverse badge</div>
+          <p class="smallnote">LC2 · All-cream on dusty rose for avatars.</p>
+        </div>
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D small">
+              <defs><linearGradient id="gDgrad" x1="0" x2="1"><stop offset="0" stop-color="var(--rose)"/><stop offset="1" stop-color="var(--rose-deep)"/></linearGradient></defs>
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="url(#gDgrad)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="stack"><div class="rest" style="background:linear-gradient(90deg,var(--rose),var(--rose-deep));-webkit-background-clip:text;color:transparent">eliera</div><div class="subtitle">Homewear</div></div>
+          </div>
+          <p class="smallnote">LC3 · Duo-grad D + matching gradient word.</p>
+        </div>
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--taupe)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="stack"><div class="rest" style="color:var(--taupe)">eliera</div><div class="subtitle" style="color:var(--charcoal)">Homewear</div></div>
+          </div>
+          <p class="smallnote">LC4 · Earthy taupe primary, charcoal subtitle.</p>
+        </div>
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose-deep)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="stack"><div class="rest" style="color:transparent;-webkit-text-stroke:1.2px var(--rose-deep)">eliera</div><div class="subtitle" style="color:var(--rose-deep)">Homewear</div></div>
+          </div>
+          <p class="smallnote">LC5 · Outline word with solid subtitle.</p>
+        </div>
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D small">
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--rose)" stroke-width="12" stroke-linecap="round"/>
+            </svg>
+            <div class="stack"><div class="rest"><span class="mix-serif" style="font-size:38px;color:var(--charcoal)">eli</span><span class="mix-script" style="font-size:38px;color:var(--rose-deep)">era</span></div><div class="subtitle">Homewear</div></div>
+          </div>
+          <p class="smallnote">LC6 · Serif→script color handoff.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Sticker & Label Colorways</h2>
+      <div class="row-center">
+        <div class="badge-solid"><svg viewBox="0 0 160 160" width="20" height="20" aria-label="D"><path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="var(--cream)" stroke-width="10" stroke-linecap="round"/></svg> Deliera</div>
+        <div class="badge-outline">Deliera</div>
+        <div class="pill" style="background:var(--beige)"><span class="mix-serif" style="font-size:18px;color:var(--charcoal)">Deliera</span></div>
+      </div>
+      <p class="smallnote">Use solid for busy backgrounds; outline for clear vinyl; beige pill for warm, premium feel on transparent zipper bags.</p>
+    </div>
 
     <div class="card">
       <h2>Emblem / Icon — Floral & Fabric Motifs</h2>
@@ -206,6 +494,30 @@
             </div>
           </div>
           <p class="smallnote">Round avatars for Shopee/TikTok and sticker seals (transparent background available).</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Lockup Variant — Fabric “D” + eliera</h2>
+      <div class="grid cols-2">
+        <div>
+          <div class="combo">
+            <svg viewBox="0 0 160 160" width="56" height="56" aria-label="Fabric D monogram">
+              <defs>
+                <linearGradient id="gClothLock" x1="0" x2="1">
+                  <stop offset="0" stop-color="var(--rose-deep)"/>
+                  <stop offset="1" stop-color="var(--rose)"/>
+                </linearGradient>
+              </defs>
+              <path d="M42,25 L42,135 C42,135 128,135 128,80 C128,25 42,25 42,25" fill="none" stroke="url(#gClothLock)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M50,35 L50,125 C50,125 118,125 118,80 C118,35 50,35 50,35" fill="none" stroke="var(--cream)" stroke-width="2" stroke-dasharray="2 4" opacity=".9"/>
+            </svg>
+            <div class="stack">
+              <div class="rest">eliera</div>
+              <div class="subtitle">Homewear</div>
+            </div>
+          </div>
+          <p class="smallnote">Use this textured drop-cap when you want a literal fabric feel (great for cozy collections & seasonal promos).</p>
         </div>
       </div>
     </div>
